@@ -56,7 +56,6 @@ CREATE TABLE `cliente` (
   `telefono` varchar(50) NOT NULL,
   `telefono_2` varchar(45) DEFAULT NULL,
   `telefono_3` varchar(45) DEFAULT NULL,
-  `primer_ingreso` varchar(255) NOT NULL,
   `autorizado` int(11) DEFAULT 0,
   `estado` int(11) NOT NULL,
   `ingreso` datetime NOT NULL,
@@ -77,7 +76,7 @@ CREATE TABLE `cliente` (
 
 LOCK TABLES `cliente` WRITE;
 /*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
-INSERT INTO `cliente` VALUES (1,'JonatanLiscano@InnovacionInvaluablesas.com',1,'Jonatan Liscano','','JonatanLiscano@InnovacionInvaluablesas.com','3002589654',NULL,NULL,'1.png',0,1,'2021-06-06 17:44:07','$2a$07$GSVs6pSNqiKLkHE6dOtZPejIUkb.m1aezlhAzsEYSSg7Wv0mcPl3e','',0,'0000-00-00 00:00:00','0000-00-00 00:00:00',2,'2021-06-06 22:44:07'),(2,'JonatanLiscano@InnovacionInvaluablesas.com',123,'Camila','','JulianRojas@InnovacionInvaluablesas.com','123456789',NULL,NULL,'avatar-default.png',0,1,'2021-06-06 16:53:16','$2a$07$GSVs6pSNqiKLkHE6dOtZPejIUkb.m1aezlhAzsEYSSg7Wv0mcPl3e','',0,'0000-00-00 00:00:00','2021-06-04 09:57:08',2,'2021-06-06 21:53:16'),(3,'undefined',111,'Julio','','JulianRojas@InnovacionInvaluablesas.com','1111111111',NULL,NULL,'avatar-default.png',0,1,'2021-06-06 23:18:54','$2a$07$GSVs6pSNqiKLkHE6dOtZPejIUkb.m1aezlhAzsEYSSg7Wv0mcPl3e','',0,'0000-00-00 00:00:00','2021-06-04 18:32:23',80,'2021-06-07 04:18:54'),(4,'undefined',555,'TEST','','jonatanliscanox@gmail.com','56164545645',NULL,NULL,'avatar-default.png',0,1,'2021-06-06 16:58:53','$2a$07$GSVs6pSNqiKLkHE6dOtZPejIUkb.m1aezlhAzsEYSSg7Wv0mcPl3e','',0,'0000-00-00 00:00:00','2021-06-06 16:58:06',4,'2021-06-06 21:58:53'),(5,'undefined',666,'TEST2','','jonatanliscanox@gmail.com','3232323',NULL,NULL,'avatar-default.png',0,1,'2021-06-06 17:01:40','$2a$07$GSVs6pSNqiKLkHE6dOtZPejIUkb.m1aezlhAzsEYSSg7Wv0mcPl3e','',0,'0000-00-00 00:00:00','2021-06-06 17:00:29',5,'2021-06-06 22:01:40');
+INSERT INTO `cliente` VALUES (1,'JonatanLiscano@InnovacionInvaluablesas.com',1,'Jonatan Liscano','','JonatanLiscano@InnovacionInvaluablesas.com','3002589654',NULL,NULL,0,1,'2021-06-06 17:44:07','$2a$07$GSVs6pSNqiKLkHE6dOtZPejIUkb.m1aezlhAzsEYSSg7Wv0mcPl3e','',0,'0000-00-00 00:00:00','0000-00-00 00:00:00',2,'2021-06-06 22:44:07'),(2,'JonatanLiscano@InnovacionInvaluablesas.com',123,'Camila','','JulianRojas@InnovacionInvaluablesas.com','123456789',NULL,NULL,0,1,'2021-06-06 16:53:16','$2a$07$GSVs6pSNqiKLkHE6dOtZPejIUkb.m1aezlhAzsEYSSg7Wv0mcPl3e','',0,'0000-00-00 00:00:00','2021-06-04 09:57:08',2,'2021-06-06 21:53:16');
 /*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -418,4 +417,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-19 16:20:09
+-- Dump completed on 2021-06-19 16:37:09
